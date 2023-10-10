@@ -104,8 +104,7 @@ let displayMenuItems = (menuItems) => {
 
         <p class="item-text">${item.desc}</div>
     </article>`
-  })
-  displayMenu = displayMenu.join('\n');
+  }).join('\n');
   sectionCenter.innerHTML = displayMenu;
 }
 
@@ -124,6 +123,7 @@ let displayCategoryBtn = () => {
     .join('\n');
     
     containerBtn.innerHTML = categoryBtns;
+    
     const filterBtns = containerBtn.querySelectorAll('.filter-btn');
     //filter items
     filterBtns.forEach(btn => {
