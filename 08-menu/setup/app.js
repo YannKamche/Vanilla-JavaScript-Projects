@@ -124,7 +124,7 @@ let displayCategoryBtn = () => {
     .join('\n');
     
     containerBtn.innerHTML = categoryBtns;
-    const filterBtns = container.querySelectorAll('.filter-btn');
+    const filterBtns = containerBtn.querySelectorAll('.filter-btn');
     //filter items
     filterBtns.forEach(btn => {
       btn.addEventListener('click', e => {
